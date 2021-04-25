@@ -53,11 +53,19 @@ func main () {
 
 	fmt.Println("\n Share cards between 2 people")
 	fmt.Println("-----------------------------------------------------------------")
-	//Why I use as  d_cards.deal(3) ? yes I understood I get as argument in that function not receiver why ?
+	fmt.Println("Test Deal func as argument")
+	//Why I use as  d_cards.deal(3) ? yes I understood I get as argument in that function not receiver why ? I understood it modify d_cards yes ?
 	hand , remaningCards := deal(d_cards, 3)  //data ni split edir ve get edib value lere verir, daha sonra bu value larla self le print metodunu cagirib chapa verir
 	hand.print()
-	fmt.Println("----------------")
 	remaningCards.print()
+// as receive I called deal1 func
+	hand1 , remaningCards1 := d_cards.deal1(3)  //data ni split edir ve get edib value lere verir, daha sonra bu value larla self le print metodunu cagirib chapa verir
+	hand1.print()
+	remaningCards1.print()
+	fmt.Println(d_cards)
+	fmt.Println("Test Deal1 func as function")
+
+
 
 	fmt.Println("\n write cards to file ")
 	fmt.Println("--------------------------------------------------------------------")

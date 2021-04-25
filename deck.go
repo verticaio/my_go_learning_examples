@@ -37,6 +37,10 @@ func deal(d deck , handSize int) (deck , deck){
 	return d[:handSize], d[handSize:]
 }
 
+func (d deck) deal1 (  handSize int) (deck , deck){
+	return d[:handSize], d[handSize:]
+}
+
 // deck --> []string --> string --> []byte
 func  (d deck) toString() string {
 	return strings.Join([]string(d),",")
