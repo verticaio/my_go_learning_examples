@@ -53,8 +53,8 @@ func main () {
 
 	fmt.Println("\n Share cards between 2 people")
 	fmt.Println("-----------------------------------------------------------------")
-	fmt.Println("Test Deal func as argument")
 	//Why I use as  d_cards.deal(3) ? yes I understood I get as argument in that function not receiver why ? I understood it modify d_cards yes ?
+	fmt.Println("Test Deal func as argument")
 	hand , remaningCards := deal(d_cards, 3)  //data ni split edir ve get edib value lere verir, daha sonra bu value larla self le print metodunu cagirib chapa verir
 	hand.print()
 	remaningCards.print()
